@@ -2,18 +2,27 @@
     font-family: "Poppins";
     margin: 0;
     padding:0;
-    box-sizing: border;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .page{
-    margin:0 auto;
-    width: 600px;
+    padding-top: 1.25em;
+    margin:10px auto 0;
+    width: 700px;
     padding-bottom: 1.25em;
     border: 1px solid #ccc;
     border-radius: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-image: linear-gradient(rgb(180, 180, 226),rgb(15, 202, 231)); */
+    background-color: rgb(66, 225, 243);
 }
 /* >, +, ~, ' ' */
 form div span.error {
@@ -30,7 +39,7 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
   ul {
     list-style: none;
     display: grid;
-    gap:0.5em;
+    gap:1.25em;
   }
   
   label {
@@ -38,7 +47,7 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
   }
 
  .container{
-    margin-top:1.25em;
+    /* margin-top:1.25em; */
  }
 
   .option-container{
@@ -73,7 +82,16 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
 
   @media only screen and (max-width: 768px) {
     .page{
-        
+        background-image: none;
+        border:none;
+        width: 90%;
     }
+    .body{
+        background-color: rgb(66, 225, 243);
+    }
+    #form ul{
+        width: 100%;
+    }
+
   }
   

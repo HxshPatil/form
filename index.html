@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
 </head>
-<body >
+<body class="body" >
     <h1>Form:</h1>
     <form action="" id="form" class="page">
         <ul>
             <li>
                 <div class="container">
                     <label for="name" class="label-text">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box"/>
+                    <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box" required/>
                     <span class="error">Please enter a valid name </span>
                 </div>
             </li>
