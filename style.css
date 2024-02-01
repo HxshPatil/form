@@ -1,5 +1,5 @@
 *{
-    font-family: Inter,sans-serif;
+    font-family: "Poppins";
     margin: 0;
     padding:0;
     box-sizing: border;
@@ -7,10 +7,10 @@
 
 .page{
     margin:0 auto;
-    width: 450px;
-    padding: 1em;
+    width: 600px;
+    padding-bottom: 1.25em;
     border: 1px solid #ccc;
-    border-radius: 1em;
+    border-radius: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +38,7 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
   }
 
  .container{
-    margin-top:1em;
+    margin-top:1.25em;
  }
 
   .option-container{
@@ -46,10 +46,17 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
     flex-direction: row;
   }
 
+  .btn-container{
+    display: flex;
+    justify-content: center;
+  }
+
   .btn{
-    width:100%;
-    margin-top: 1em;
-    text-align:center;
+    box-sizing: unset;
+    width:20%;
+    padding:7px;
+    margin-top: 1.25em;
+    text-align: center;
   }
 
   .in-box{
@@ -62,5 +69,11 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
     width: 100%;
     height:40px;
     /* background-color: rgb(232, 240, 254); */
+  }
+
+  @media only screen and (max-width: 768px) {
+    .page{
+        
+    }
   }
   

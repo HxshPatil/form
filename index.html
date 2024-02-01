@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
 </head>
@@ -12,15 +15,15 @@
         <ul>
             <li>
                 <div class="container">
-                    <label for="name">Name:</label>
+                    <label for="name" class="label-text">Name:</label>
                     <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box"/>
                     <span class="error">Please enter a valid name </span>
                 </div>
             </li>
           
           <li>
-            <div class="container">
-                <label for="Sex">Sex:</label>
+            <div>
+                <label for="Sex" class="label-text">Sex:</label>
                 <div class="option-container">
                     <div style="padding-right:10px;" >
                         <input type="radio" id="male" name="Sex" value="male"  required />
@@ -37,7 +40,7 @@
            
                 <li>
                     <div class="container">
-                    <label for="mail">Email:</label>
+                    <label for="mail" class="label-text">Email:</label>
                     <input type="email" id="mail" name="user_email" placeholder="enter your email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required class="in-box two-input"/>
                     <span class="error">Please enter a valid email id</span>
                 </div>
@@ -46,7 +49,7 @@
            
                 <li>
                     <div class="container">
-                    <label for="phone">Phone:</label>
+                    <label for="phone" class="label-text">Phone:</label>
                     <input type="tel" id="number" name="user_phone" placeholder="enter your phone number" pattern="^([6-9]{1}[0-9]{9})$" class="in-box two-input"/>
                     <span class="error">Please enter a valid phone number</span>
                 </div>  
@@ -54,7 +57,7 @@
            
           
             <li>
-                <div class="container"></div>
+                <div class="container">
                 <input type="checkbox" id="agree" name="agree" required/>
           <label for="agree" class="agree-container">I agree to the <a href="https://attryb.com/term-of-service">terms and conditions</a></label>
         </div>    
@@ -62,8 +65,8 @@
           
           
         </div>
-          <li class="btn">
-            <button type="submit" id="submit" onclick=showConsole(event)>Submit</button>
+          <li class="btn-container">
+            <button type="submit" id="submit" onclick=showConsole(event) class="btn">Submit</button>
           </li>
          
         </ul>
