@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom right,#F2C94C,#F2994A,rgb(214, 113, 46));
+    background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
     /* background-color: rgb(66, 225, 243); */
 }
 /* >, +, ~, ' ' */
@@ -117,7 +117,7 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
     }
     .body{
         /* background-color: rgb(66, 225, 243); */
-        background-image: linear-gradient(to bottom right,#F2C94C,#F2994A, rgb(214, 113, 46));
+        background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
     }
     #form ul{
         width: 100%;
