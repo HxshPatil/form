@@ -23,7 +23,6 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
-    /* background-color: rgb(66, 225, 243); */
 }
 /* >, +, ~, ' ' */
 form div span.error {
@@ -36,19 +35,36 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
 	display: block;
 	color: red;
 }
-  
+
   ul {
     list-style: none;
     display: grid;
-    gap:1.25em;
-  }
-  
-  label {
-    width: 90px;
+    gap:1.5em;
   }
 
   .container{
     position:relative;
+  }
+
+  .line-1 {
+    position:relative;
+    height:0;
+    width:2.2em;
+  }
+
+  /* .line-1 {
+    position:relative;
+    height:0;
+    width:2.2em;
+    height: 2px;
+    top:2.1px;
+    background: white;
+  } */
+
+  .container:focus-within .line-1 {
+    height: 2px;
+    top:2.1px;
+    background: white;
   }
 
   .option-container{
@@ -63,6 +79,7 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
 
   .btn{
     box-sizing: unset;
+    border-radius: 3px;
     width:20%;
     padding:7px;
     margin-top: 1.25em;
@@ -70,7 +87,7 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
   }
 
   .btn:hover{
-    background-color: ghostwhite;
+    background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
   }
 
   .in-box{
@@ -95,28 +112,29 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
     top:10px;
   }
 
-  /* form div input:focus~::placeholder{
-        opacity: 1;
-} */
-
-.in-text:focus ~ .label-text,
-.in-text:not(:focus):valid ~ .label-text{
-    color: red;
-  /* top: 8px;
-  bottom: 10px;
-  left: 20px;
-  font-size: 11px; */
-  /* opacity: 1; */
-}
+  form div input:valid :not(:focus) ~ .label-text{
+    opacity: 0;
+  }
+  
+  
+  .container:focus-within label {
+    top: -0.8em;
+    left: 0px;
+    font-size: 0.7em;
+    /* background: white; */
+  }
+  
+  .form-field:focus-within input {
+    padding: 8px 5px 5px;
+  }
 
   @media only screen and (max-width: 768px) {
     .page{
-        background-image: none;
         border:none;
         width: 90%;
+        background-image: none;
     }
     .body{
-        /* background-color: rgb(66, 225, 243); */
         background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
     }
     #form ul{

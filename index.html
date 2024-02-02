@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <title>Form</title>
 </head>
 <body class="body" >
@@ -16,7 +16,11 @@
         <ul>
             <li>
                 <div class="container">
-                    <label for="name" class="label-text">Name:</label>
+                    <div class="for-focus">
+                        <div class="line-1"></div>
+                        <label for="name" class="label-text">Name</label>
+                    </div>
+                    
                     <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box" required/>
                     <span class="error">Please enter a valid name </span>
                 </div>
@@ -24,7 +28,7 @@
           
           <li>
             <div>
-                <label for="Gender">Gender:</label>
+                <label for="Gender">Gender</label>
                 <div class="option-container">
                     <div style="padding-right:10px;" >
                         <input type="radio" id="gender" name="Gender" value="male"  required />
@@ -45,7 +49,11 @@
            
                 <li>
                     <div class="container">
-                    <label for="mail" class="label-text">Email:</label>
+                        <div class="for-focus for-mail">
+                            <div class="line-1"></div>
+                            <label for="mail" class="label-text">Email</label>
+                        </div>
+                    
                     <input type="email" id="mail" name="user_email" placeholder="enter your email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required class="in-box two-input"/>
                     <span class="error">Please enter a valid email id</span>
                 </div>
@@ -54,7 +62,11 @@
            
                 <li>
                     <div class="container">
-                    <label for="phone" class="label-text">Phone:</label>
+                        <div class="for-focus">
+                            <div class="line-1"></div>
+                            <label for="phone" class="label-text">Phone</label>
+                        </div>
+                    
                     <input type="tel" id="number" name="user_phone" placeholder="enter your phone number" pattern="^([6-9]{1}[0-9]{9})$" class="in-box two-input"/>
                     <span class="error">Please enter a valid phone number</span>
                 </div>  
@@ -76,6 +88,7 @@
          
         </ul>
       </form>
+      <script src="script.js"></script>
       
 </body>
 </html>
