@@ -8,10 +8,10 @@
 
 // console.log(username);
 
-
-function myBlurr(name){
-    if(name!=''){
-        document.getElementsByClassName('label-text').style.display = "none";
+    function handleFocus(user_phone){
+        if(user_phone!="")
+        {
+            document.getElementById('n3','m3').style.opacity=0
     }}
     
 
