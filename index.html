@@ -17,12 +17,12 @@
             <li>
                 <div class="container">
                     <div class="for-focus">
-                        <div class="line-1"></div>
-                        <label for="name" class="label-text">Name</label>
+                        <div class="line-1" id="m1"></div>
+                        <label for="name" id="n1" class="label-text" >Name</label>
                     </div>
-                    
-                    <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box" required/>
+                    <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box" required onblur="document.getElementById('n1','m1').style.opacity=0" onfocus="document.getElementById('n1','m1').style.opacity=1" />
                     <span class="error">Please enter a valid name </span>
+                    
                 </div>
             </li>
           
@@ -50,11 +50,11 @@
                 <li>
                     <div class="container">
                         <div class="for-focus for-mail">
-                            <div class="line-1"></div>
-                            <label for="mail" class="label-text">Email</label>
+                            <div class="line-1" id="m2"></div>
+                            <label for="mail" id="n2" class="label-text">Email</label>
                         </div>
                     
-                    <input type="email" id="mail" name="user_email" placeholder="enter your email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required class="in-box two-input"/>
+                    <input type="email" id="mail" name="user_email" placeholder="enter your email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required class="in-box two-input" onblur="document.getElementById('n2','m2').style.opacity=0" onfocus="document.getElementById('n2','m2').style.opacity=1"/>
                     <span class="error">Please enter a valid email id</span>
                 </div>
                 </li>
@@ -63,18 +63,18 @@
                 <li>
                     <div class="container">
                         <div class="for-focus">
-                            <div class="line-1"></div>
-                            <label for="phone" class="label-text">Phone</label>
+                            <div class="line-1" id="m3"></div>
+                            <label for="phone" id="n3" class="label-text">Phone</label>
                         </div>
                     
-                    <input type="tel" id="number" name="user_phone" placeholder="enter your phone number" pattern="^([6-9]{1}[0-9]{9})$" class="in-box two-input"/>
+                    <input type="tel" id="number" name="user_phone" placeholder="enter your phone number" pattern="^([6-9]{1}[0-9]{9})?([0]{1}[0-9]{10})$" class="in-box two-input" onblur="document.getElementById('n3','m3').style.opacity=0" onfocus="document.getElementById('n3','m3').style.opacity=1"/>
                     <span class="error">Please enter a valid phone number</span>
                 </div>  
                 </li>
            
           
             <li>
-                <div class="container">
+                <div class="container agreement">
                 <input type="checkbox" id="agree" name="agree" required/>
           <label for="agree" class="agree-container">I agree to the <a href="https://attryb.com/term-of-service">terms and conditions</a></label>
         </div>    
@@ -83,12 +83,13 @@
           
         </div>
           <li class="btn-container">
-            <button type="submit" id="submit" class="btn">Submit</button>
+            <input type="submit" id="submit" value="submit" class="btn"/>
           </li>
          
         </ul>
       </form>
-      <script src="script.js"></script>
+      <script src="script.js">
+      </script>
       
 </body>
 </html>
