@@ -119,7 +119,7 @@ form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
   
   
   .container:focus-within label {
-    top: -0.8em;
+    top: -0.7em;
     left: 0px;
     font-size: 0.7em;
   }
