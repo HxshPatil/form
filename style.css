@@ -1,146 +1,183 @@
 *{
-    font-family: "roboto";
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+  font-family: "roboto";
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 .body{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    height: 100dvh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  height: 100dvh;
+  background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
 }
 
 .page{
-    padding-top: 1.25em;
-    margin:10px auto 0;
-    width: 700px;
-    padding-bottom: 1.25em;
-    border: 1px solid #ccc;
-    border-radius: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
+  padding-top: 1.25em;
+  margin:10px auto 0;
+  width: 700px;
+  padding-bottom: 1.25em;
+  border: 1px solid #ccc;
+  border-radius: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
 }
 /* >, +, ~, ' ' */
 form div span.error {
-	display: none;
-	font-size: 0.8em;
-	position: absolute;
+display: none;
+font-size: 0.8em;
+position: absolute;
 }
 
 form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
-	display: block;
-	color: red;
+display: block;
+color: red;
 }
 
-  ul {
-    list-style: none;
-    display: grid;
-    gap:1.5em;
-  }
-
-  .container{
-    position:relative;
-  }
-
-  .line-1 {
-    position:relative;
-    height:0;
-    width:2.2em;
-  }
-
-  /* .line-1 {
-    position:relative;
-    height:0;
-    width:2.2em;
-    height: 2px;
-    top:2.1px;
-    background: white;
-  } */
-
-  .container:focus-within .line-1 {
-    height: 2.5px;
-    top:2.1px;
-    background: white;
-  }
-
-  .option-container{
-    display:flex;
-    flex-direction: row;
-  }
-
-  .btn-container{
-    display: flex;
-    justify-content: center;
-  }
-
-  .btn{
-    box-sizing: unset;
-    border-radius: 3px;
-    width:20%;
-    padding:7px;
-    margin-top: 1.25em;
-    text-align: center;
-  }
-
-  .btn:hover{
-    color: white;
-    background-color: black;
+ul {
+  list-style: none;
+  display: grid;
+  gap:1.5em;
 }
 
-  .in-box{
-    padding-left: 5px;
-    font-size: 1em;
-    border-radius: 4px;
-    border-width: 1px;
-    border-style: solid;
-    display: block;
-    width: 100%;
-    height:40px;
+/* .container{
+  position:relative;
+
+} */
+
+.container:focus-within {
+  position: relative;
+}
+
+.label-text{
+  opacity:0;
+}
+input:focus::placeholder{
+  opacity:0;
+}
+.container:focus-within .label-text {
+  opacity:1;
+  position: absolute;
+  top: -0.5em;
+  left: 10px;
+  font-size: 12px;
+  background: white;
+  padding: 0 5px;
+}
+
+.container:focus-within input {
+  padding: 8px 5px 5px;
+}
+
+/* .line-1 {
+  position:relative;
+  height:0px;
+  width:2.2em;
+  top:2.1px;
+  background: white;
+} */
+
+
+/* .line-1 {
+  position:relative;
+  height:0;
+  width:2.2em;
+  height: 2px;
+  top:2.1px;
+  background: white;
+} */
+
+/* .container:focus-within .line-1 {
+  height: 2.5px;
+  top:2.1px;
+  background: white;
+} */
+
+.option-container{
+  display:flex;
+  flex-direction: row;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  box-sizing: unset;
+  border-radius: 3px;
+  width:20%;
+  padding:7px;
+  margin-top: 1.25em;
+  text-align: center;
+}
+
+.btn:hover{
+  color: white;
+  background-color: black;
+}
+
+.in-box{
+  padding-left: 5px;
+  font-size: 1em;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  height:40px;
+}
+
+/* ::placeholder{
+  opacity:0;
+}  */
+
+/* .label-text{
+  position: absolute;
+  z-index: 1;
+  left:5px;
+  top:10px;
+}
+
+.label-text2 {
+  top: -0.7em;
+  left: 0px;
+  font-size: 0.7em;
+} */
+
+
+
+
+
+
+/* .container:focus-within label {
+  top: -0.7em;
+  left: 0px;
+  font-size: 0.7em;
+} */
+
+/* input:focus::placeholder{
+  opacity: 1;
+} */
+
+
+
+@media only screen and (max-width: 768px) {
+  .page{
+      border:none;
+      width: 90%;
+      
   }
 
- ::placeholder{
-    opacity:0;
- } 
-
-  .label-text{
-    position: absolute;
-    z-index: 1;
-    left:5px;
-    top:10px;
+  .body{
+    background-image: none;
+    background-color: white;
   }
-
-
-
-
-  
-  
-  .container:focus-within label {
-    top: -0.7em;
-    left: 0px;
-    font-size: 0.7em;
+  #form ul{
+      width: 100%;
   }
-  
-  input:focus::placeholder{
-    opacity: 1;
-  }
-
-
-
-  @media only screen and (max-width: 768px) {
-    .page{
-        border:none;
-        width: 90%;
-        background-image: none;
-    }
-    .body{
-        background-image: linear-gradient(to bottom right,#F8FFAE,#43C6AC);
-    }
-    #form ul{
-        width: 100%;
-    }
-  }
-  
+}
