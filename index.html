@@ -7,31 +7,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Form</title>
 </head>
 <body class="body" >
     <h1>Form:</h1>
-    <form action="" id="form" class="page">
+    <form id="form" onsubmit="showConsole()" class="page">
         <ul>
             <li>
                 <div class="container">
                     <label for="name" class="label-text">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box"/>
+                    <input type="text" id="name" name="name" placeholder="enter your name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box" required/>
                     <span class="error">Please enter a valid name </span>
                 </div>
             </li>
           
           <li>
             <div>
-                <label for="Sex">Sex:</label>
+                <label for="Gender">Gender:</label>
                 <div class="option-container">
                     <div style="padding-right:10px;" >
-                        <input type="radio" id="male" name="Sex" value="male"  required />
+                        <input type="radio" id="gender" name="Gender" value="male"  required />
                         <label for="male">Male</label>
                     </div>
-                    <div>
-                        <input type="radio" id="female" name="Sex" value="female" required />
+                    <div style="padding-right:10px;">
+                        <input type="radio" id="gender" name="Gender" value="female" required />
                         <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gender" name="Gender" value="other" required />
+                        <label for="other">Other</label>
                     </div>
                 </div>
                 
@@ -66,11 +71,11 @@
           
         </div>
           <li class="btn-container">
-            <button type="submit" id="submit" onclick=showConsole(event) class="btn">Submit</button>
+            <button type="submit" id="submit" class="btn">Submit</button>
           </li>
          
         </ul>
       </form>
-      <script src="script.js"></script>
+      
 </body>
 </html>

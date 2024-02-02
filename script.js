@@ -1,4 +1,8 @@
 function showConsole(event) {
     event.preventDefault();
-    alert("data submitted");
+
+    function display(){
+        alert("data submitted");
+    }
+    document.getElementById("btn").addEventListener("click", display);
 }
