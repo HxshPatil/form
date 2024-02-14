@@ -1,0 +1,102 @@
+.mehar .label-float {
+    position: relative;
+}
+
+.mehar .field {
+    display: inline-block;
+    border: thin solid #fafafa; 
+    border-bottom: solid medium #999;
+    color: #444;
+    background-color: #fafafa;
+    padding: 10px;
+    margin: 15px;
+    width: 100%;
+}
+
+/* .details {
+    position: absolute;
+    top: 9.9rem;
+    width: 280px;
+} */
+
+.mehar .floating-label {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: #999;
+    transition: 0.2s;
+    pointer-events: none;
+    font-size: 15px;
+}
+
+/* .gender {
+    margin: 15px;
+    color: #999;
+    width: 280px;
+    display: inline-flex;
+    align-items: center;
+} */
+
+/* .terms-conditions { 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#terms-cond {
+    display: inline-block;
+    width: 280px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    color: #999;
+} */
+
+/* .submit {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10%;
+    border: 0;
+    background-color: #C7C8CC;
+} */
+
+.mehar .field:focus ~ label,
+.mehar .field:valid ~ label,
+.mehar .field:valid:not(:focus) ~ label {
+    position: absolute;
+    color: green;
+    background-color: #fff;
+    left: 25px;
+}
+
+.mehar .field:valid:not(:focus) ~ .field,
+.mehar .field:valid ~ .field {
+    border: 2px solid black;
+}
+
+.field:invalid ~ .field {
+    border: 2px solid red;
+}
+
+.mehar .text-field:focus ~ label,
+.mehar .text-field:valid ~ label,
+.mehar .email-field:focus ~ label,
+.mehar .email-field:valid ~ label,
+.mehar .phone-field:focus ~ label,
+.mehar .phone-field:valid ~ label {
+    display: block;
+    top: 0.2rem;
+    font-size: small;
+    height: 20px;
+}
+
+/* @media only screen and (max-width: 386px) {
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */

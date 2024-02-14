@@ -6,88 +6,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Form</title>
+    <link rel="stylesheet" href="style_harsh.css">
+    <link rel="stylesheet" href="style_sachin.css">
+    <link rel="stylesheet" href="style_gagan.css">
+    <link rel="stylesheet" href="style_mehar.css">
+    <link rel="stylesheet" href="style_shine.css">
+    <link rel="stylesheet" href="style_royal.css"> 
+        <title>Form</title>
 </head>
-<body class="body" >
+<div class="header">
     <h1>Form:</h1>
-    <form id="form" onsubmit="showConsole()" class="page">
-        <ul>
-            <li>
-                <div class="container">
-                    <div class="for-focus">
-                        <div class="line-1" id="m1"></div>
-                        <label for="name" id="n1" class="label-text" >Name</label>
-                    </div>
-                    <input type="text" id="name" name="name" placeholder="Name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box" required onblur="document.getElementById('n1','m1').style.opacity=0" onfocus="document.getElementById('n1','m1').style.opacity=1" autocomplete="off" />
-                    <span class="error">Please enter a valid name </span>
-                    
+</div>
+<body class="body" >
+    
+    <form id="form" class="page">
+        <div class="harsh">
+            <div class="container">
+                <div class="for-focus">
+                    <div class="line-1" id="m1"></div>
+                    <label for="name" id="n1" class="label-text" >Name</label>
                 </div>
-            </li>
-          
-          <li>
-            <div>
-                <label for="Gender">Gender</label>
-                <div class="option-container">
-                    <div style="padding-right:10px;" >
-                        <input type="radio" id="male" name="Gender" value="male"  required />
-                        <label for="male">Male</label>
-                    </div>
-                    <div style="padding-right:10px;">
-                        <input type="radio" id="female" name="Gender" value="female" required />
-                        <label for="female">Female</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="other" name="Gender" value="other" required />
-                        <label for="other">Other</label>
-                    </div>
-                </div>
-                
+                <input type="text" id="name" name="name" placeholder="Name"  pattern="^([A-Za-z]{1,20})([ ]{0,1})([A-Za-z]{1,20})?([ ]{0,1})?([A-Za-z]{1,20})$" class="in-box" required onblur="document.getElementById('n1','m1').style.opacity=0" onfocus="document.getElementById('n1','m1').style.opacity=1" autocomplete="off" />
             </div>
-          </li>
-           
-                <li>
-                    <div class="container">
-                        <div class="for-focus for-mail">
-                            <div class="line-1" id="m2"></div>
-                            <label for="mail" id="n2" class="label-text">Email</label>
-                        </div>
-                    
-                    <input type="email" id="mail" name="user_email" placeholder="Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required class="in-box two-input" onblur="document.getElementById('n2','m2').style.opacity=0" onfocus="document.getElementById('n2','m2').style.opacity=1" autocomplete="off"/>
-                    <span class="error">Please enter a valid email id</span>
-                </div>
-                </li>
-            
-           
-                <li>
-                    <div class="container">
-                        <div class="for-focus">
-                            <!-- <div class="line-1" id="m3"></div> -->
-                            <label for="phone" id="n3" class="label-text">Phone</label>
-                        </div>
-                    
-                    <input type="tel" id="number" name="user_phone" placeholder="Phone" pattern="^([6-9]{1}[0-9]{9})$" class="in-box" onblur="document.getElementById('n3','m3').style.opacity=0" onfocus="document.getElementById('n3','m3').style.opacity=1" autocomplete="off"/>
-                    <span class="error">Please enter a valid phone number</span>
-                </div>  
-                </li>
-           
-          
-            <li>
-                <div class="container agreement">
-                <input type="checkbox" id="agree" name="agree" required/>
-          <label for="agree" class="agree-container">I agree to the <a href="https://attryb.com/term-of-service">terms and conditions</a></label>
-        </div>    
-        </li>
-          
-          
         </div>
-          <li class="btn-container">
-            <input type="submit" id="submit" value="submit" class="btn"/>
-          </li>
-         
-        </ul>
-      </form>
+
+        <div class="sachin">
+            <div class="form-field">
+                <label for="email" id="e">Name</label>
+                <input type="email" class="boxo" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    title="Invalid email address" placeholder="Name" 
+                    onfocus="document.getElementById('e').style.display='block'"
+                    onblur="document.getElementById('e').style.display='none'" required>
+            </div>
+        </div>
+
+        <div class="gagan">
+            <div class="form-item form-field">
+                <label for="fname" id="label" class="hidden labeltext">User Name</label>
+                <input class="form-name-width form-name" placeholder="Enter Your Name" onfocus="handlefocusinG(this)"
+                    onfocusout="handleFocusOutG(this)" name="fname" id="name" type="text"
+                    pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})"
+                    title=" use a-z,A-Z is valid" autocomplete="off" required />
+            </div>
+        </div>
+
+        <div class="shine">
+            <div class="inputs">
+                <input id="name" type="text" required />
+                <label for="name" class="placeholder">Name</label>
+            </div>
+        </div>
+
+        <div class="mehar">
+            <div class="name-field label-float">
+                <input id="name" type="text" name="name" class="text-field field" required>
+                <label class="floating-label">Name</label>
+             </div> 
+        </div>
+
+        <div class="royal">
+            <div class="name-li">
+                <label  class="label textlabel" for="name">Full Name</label>
+                <input class="textinput" id="name" type="text" onfocus="handleFocusIn(this)" onfocusout="handleFocusOut(this)" autocomplete="off" required />           
+            </div>
+        </div>
+    </form>
       <script src="script.js">
       </script>
       

@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+.header{
+  width:100%;
+  color: black; 
+  background-color: white;
+  display:grid;
+  justify-content: center;
+}
+
 .body{
   display: flex;
   flex-direction:column;
@@ -21,24 +29,27 @@
   border: 1px solid #ccc;
   border-radius: 1.5em;
   display: flex;
+  flex-direction: column;
+  gap:50px;
   align-items: center;
   justify-content: center;
   background-color: white;
+  
 
 }
 /* >, +, ~, ' ' */
-form div span.error {
+.harsh form div span.error {
 display: none;
 font-size: 0.8em;
 position: absolute;
 }
 
-form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
+.harsh form div input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
 display: block;
 color: red;
 }
 
-ul {
+.harsh ul {
   list-style: none;
   display: grid;
   gap:1.5em;
@@ -49,11 +60,11 @@ ul {
 
 } */
 
-.container:focus-within {
+.harsh .container:focus-within {
   position: relative;
 }
 
-.label-text{
+.harsh .label-text{
   position: absolute;
   top: -0.5em;
   left: 10px;
@@ -63,53 +74,29 @@ ul {
   display:none;
 
 }
-input:focus::placeholder{
+.harsh input:focus::placeholder{
   opacity:0;
 }
-.container:focus-within .label-text {
+.harsh .container:focus-within .label-text {
   display:block;
   /* opacity:1; */
 }
 
-.container:focus-within input {
+.harsh .container:focus-within input {
   padding: 8px 5px 5px;
 }
 
-/* .line-1 {
-  position:relative;
-  height:0px;
-  width:2.2em;
-  top:2.1px;
-  background: white;
-} */
-
-
-/* .line-1 {
-  position:relative;
-  height:0;
-  width:2.2em;
-  height: 2px;
-  top:2.1px;
-  background: white;
-} */
-
-/* .container:focus-within .line-1 {
-  height: 2.5px;
-  top:2.1px;
-  background: white;
-} */
-
-.option-container{
+.harsh .option-container{
   display:flex;
   flex-direction: row;
 }
 
-.btn-container{
+.harsh .btn-container{
   display: flex;
   justify-content: center;
 }
 
-.btn{
+.harsh .btn{
   box-sizing: unset;
   border-radius: 3px;
   width:20%;
@@ -118,12 +105,12 @@ input:focus::placeholder{
   text-align: center;
 }
 
-.btn:hover{
+.harsh .btn:hover{
   color: white;
   background-color: black;
 }
 
-.in-box{
+.harsh .in-box{
   padding-left: 5px;
   font-size: 1em;
   border-radius: 4px;
@@ -134,41 +121,7 @@ input:focus::placeholder{
   height:40px;
 }
 
-/* ::placeholder{
-  opacity:0;
-}  */
-
-/* .label-text{
-  position: absolute;
-  z-index: 1;
-  left:5px;
-  top:10px;
-}
-
-.label-text2 {
-  top: -0.7em;
-  left: 0px;
-  font-size: 0.7em;
-} */
-
-
-
-
-
-
-/* .container:focus-within label {
-  top: -0.7em;
-  left: 0px;
-  font-size: 0.7em;
-} */
-
-/* input:focus::placeholder{
-  opacity: 1;
-} */
-
-
-
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .page{
       border:none;
       width: 90%;
@@ -182,4 +135,4 @@ input:focus::placeholder{
   #form ul{
       width: 100%;
   }
-}
+} */

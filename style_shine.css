@@ -1,0 +1,65 @@
+/* .shine #submit {
+    padding: 5px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.shine #submit:hover {
+    background-color: #9e9898;
+} */
+
+.shine .inputs {
+    position: relative;
+}
+
+.shine .inputs input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 20px 10px;
+    max-width: 300px;
+    background-color: #f2f2f2;
+    border: none;
+    padding-bottom: 5px;
+}
+
+.shine .placeholder {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 1em;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.shine input:focus + .placeholder,
+.shine input:valid + .placeholder {
+    top: -15px;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* .shine .gender-box {
+    margin-top: -10px;
+    margin-bottom: 25px;
+} */
+
+/* .shine .gender-title {
+    margin-bottom: 5px;
+} */
+
+/* .shine .terms {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .shine #check-text {
+    margin-left: 5px;
+} */
+
+/* .shine #terms1 {
+    z-index: 100;
+} */
+

@@ -1,0 +1,144 @@
+  .sachin .heading {
+    font-size: 30px;
+    font-weight: 800;
+    height: 60px;
+    background-color: #6C40B3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sachin .image {
+    display: flex;
+    position: fixed;
+    right: 130px;
+    bottom: 220px;
+  }
+  
+  
+  .sachin .info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .sachin .all-Details {
+    padding: 20px;
+  }
+  
+  .sachin .boxo {
+    height: 35px;
+    width: 300px;
+  }
+  
+  .sachin .lable {
+    font-weight: 400;
+  }
+  
+  .sachin .upgen {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  
+  .sachin #n,
+  .sachin #e,
+  .sachin #p {
+    display: none;
+  }
+  
+  .sachin .sub-btn {
+    background-color: #6C40B3;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  
+  .sachin .sub-btn:hover {
+    background-color: #6C40B3;
+  }
+  
+  .sachin .form-field:focus-within {
+    position: relative;
+  }
+  
+  .sachin .form-field:focus-within label {
+    position: absolute;
+    top: -0.7em;
+    left: 10px;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+  }
+  
+  .sachin input:focus::placeholder{
+    opacity: 0;
+  }
+  
+  .sachin input:title{
+    color: red;
+  }
+  
+  .sachin input::placeholder{
+    padding-left: 8px;
+  }
+  
+  .sachin input:focus-visible {
+    outline: 2px solid #6C40B3;
+    border: none;
+  }
+  
+  .sachin fieldset {
+    display: flex;
+    border: 1px solid #6C40B3;
+    justify-content: space-evenly;
+    width: 300px;
+  }
+  
+  .sachin .form-field:focus-within input {
+    padding: 8px 5px 5px;
+  }
+  
+  .sachin .daba {
+    font-size: 14px;
+    color: rgb(60, 60, 60);
+    font-weight: 800;
+  }
+  
+  .sachin .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+    }
+  
+  /* @media only screen and (max-width:1110px) {
+    .image {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .form{
+      padding: 0px;
+    }
+    .heading {
+      margin-bottom: 60px;
+    }
+  
+    .info {
+      margin: 0px;
+    }
+  
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  } */

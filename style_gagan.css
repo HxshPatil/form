@@ -1,0 +1,89 @@
+
+.gagan .banner > p{
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 900;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.gagan .field-value{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.gagan .form-container{
+   justify-content: center;
+   display: flex;
+}
+
+  .gagan .form-field{
+    position: relative;
+  }
+  
+.gagan .labeltext {
+    position: absolute;
+    top: 0.5rem;
+    left: 10px;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px; 
+    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+  
+.gagan .form-field:focus-within input {
+    padding: 8px 5px 5px;
+    background-color: white;
+}
+
+.gagan input{
+  padding: 8px 5px 5px;
+}
+/* .gagan input {
+    -webkit-background-clip: text !important;
+  } */
+
+.gagan .form-item{
+    padding: 1rem;
+    padding:1rem 0 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.gagan .hidden{
+  display: none;
+}
+
+
+.gagan .submit-button{
+    background-color: purple;
+    width: 5rem;
+    height: 2rem;
+    color: white;
+    border: 1px solid purple;
+}
+.gagan .form-name-width{
+    width:16rem;
+}
+.gagan #male #female #other{
+    padding-left: 3px;
+}
+
+.gagan .submit-button:hover{
+    transform: scale(1.05);
+}
+
+
+.gagan input:focus::placeholder{
+    opacity: 0;
+}
